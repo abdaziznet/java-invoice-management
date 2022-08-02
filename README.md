@@ -19,13 +19,14 @@ Diantara metode pembayaran yang akan disupport antara lain:
 # Cara Setup Database #
 
 1. Jalankan postgreSql di docker
-
-    ...
+    
+    ....
     docker run --rm \
         --name invoice-db \
+        -e POSTGRES_DB=invoicedb \
         -e POSTGRES_USER=invoice \
         -e POSTGRES_PASSWORD=PViwM7w7Tq5cL2N1cHLo \
         -e PGDATA=/var/lib/postgresql/data/pgdata \
-        -v /custom/mount:/var/lib/postgresql/data \
-        postgres
-    ...
+        -v ./invoicedb-data:/var/lib/postgresql/data \
+        postgres:14
+    ....
