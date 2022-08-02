@@ -20,7 +20,7 @@ Diantara metode pembayaran yang akan disupport antara lain:
 
 1. Jalankan postgreSql di docker
     
-    ....
+    `
     docker run --rm \
         --name invoice-db \
         -e POSTGRES_DB=invoicedb \
@@ -29,4 +29,4 @@ Diantara metode pembayaran yang akan disupport antara lain:
         -e PGDATA=/var/lib/postgresql/data/pgdata \
         -v ./invoicedb-data:/var/lib/postgresql/data \
         postgres:14
-    ....
+    `
