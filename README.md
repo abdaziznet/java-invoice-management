@@ -27,7 +27,7 @@ Diantara metode pembayaran yang akan disupport antara lain:
         -e POSTGRES_USER=invoice \
         -e POSTGRES_PASSWORD=PViwM7w7Tq5cL2N1cHLo \
         -e PGDATA=/var/lib/postgresql/data/pgdata \
-        -v "$PWD/invoicedb-data:/var/lib/postgresql/data" \
+        -v "$PWD/java-invoice-management/invoicedb-data:/var/lib/postgresql/data" \
         -p 5432:5432 \
         postgres:14
     ```
