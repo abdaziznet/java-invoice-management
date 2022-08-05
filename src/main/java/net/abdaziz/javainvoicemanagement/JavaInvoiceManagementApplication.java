@@ -1,4 +1,4 @@
-package net.abdaziz.javainvoicemanagement;
+package net.abdaziz.javainvoicemanagement.entity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

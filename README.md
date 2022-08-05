@@ -15,6 +15,12 @@ Diantara metode pembayaran yang akan disupport antara lain:
 * QR Payment
     * QRIS
 
+Tipe tagihajn yang tersedia:
+
+    * CLOSED : bayar sesuai nominal. kalau tidak sesuai ditolak
+    * OPEN : pembayaran berapapun diterima
+    * INSTALLMENT : pembayran diterima selama total akumulasi lebih kecil atau sama dengan nilai tagihan 
+
 
 # Cara Setup Database #
 
@@ -27,7 +33,7 @@ Diantara metode pembayaran yang akan disupport antara lain:
         -e POSTGRES_USER=invoice \
         -e POSTGRES_PASSWORD=PViwM7w7Tq5cL2N1cHLo \
         -e PGDATA=/var/lib/postgresql/data/pgdata \
-        -v "$PWD/java-invoice-management/invoicedb-data:/var/lib/postgresql/data" \
+        -v "$PWD/invoicedb-data:/var/lib/postgresql/data" \
         -p 5432:5432 \
         postgres:14
     ```
